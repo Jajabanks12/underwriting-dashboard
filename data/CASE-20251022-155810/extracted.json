@@ -1,0 +1,17 @@
+{
+  "applicant_id": "TEMP",
+  "entity_type": "individual",
+  "age": null,
+  "years_in_business": null,
+  "naics": null,
+  "revenue_usd": null,
+  "loss_runs_36mo": [],
+  "address": {
+    "city": "Market or local restaurant",
+    "state": null,
+    "zip": null
+  },
+  "location_zone": null,
+  "prior_carrier": null,
+  "requested_limits": {}
+}

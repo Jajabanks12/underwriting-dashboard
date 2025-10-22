@@ -1,0 +1,17 @@
+{
+  "applicant_id": "TEMP",
+  "entity_type": "business",
+  "age": 47,
+  "years_in_business": 4,
+  "naics": "722511",
+  "revenue_usd": 850000.0,
+  "loss_runs_36mo": [],
+  "address": {
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30303"
+  },
+  "location_zone": "X",
+  "prior_carrier": null,
+  "requested_limits": {}
+}

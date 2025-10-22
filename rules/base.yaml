@@ -1,0 +1,21 @@
+version: "1.0.0"
+rules:
+  - id: AGE_OK
+    description: "Applicants must be < 60 when entity_type is individual"
+    severity: blocker     # blocker | referral | warning | info
+    condition: "entity_type == 'individual' and (age is not None) and (age < 60)"
+
+  - id: ZONE_REQUIRES_REFERRAL
+    description: "Zone X requires referral"
+    severity: referral
+    condition: "location_zone == 'X'"
+
+  - id: NO_MAJOR_LOSS_36MO
+    description: "No single loss > 50000 in last 36 months"
+    severity: warning
+    condition: "max([l['paid'] + l.get('reserve',0) for l in loss_runs_36mo] or [0]) <= 50000"
+
+  - id: YIB_MINIMUM
+    description: "Years in business >= 3 for business entities"
+    severity: referral
+    condition: "entity_type == 'business' and (years_in_business is not None) and (years_in_business >= 3)"

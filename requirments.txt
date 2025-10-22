@@ -1,0 +1,7 @@
+streamlit
+pydantic
+sqlmodel
+sqlalchemy<2.0
+aiosqlite
+python-dotenv
+pre-commit

@@ -1,0 +1,8 @@
+Age: 47
+City: Atlanta
+State: GA
+Zip: 30303
+Revenue: $850,000
+NAICS: 722511
+Years in Business: 4
+Zone: X
